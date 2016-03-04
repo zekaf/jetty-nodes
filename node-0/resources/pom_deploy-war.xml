@@ -1,0 +1,134 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+ <groupId>com.rest.test</groupId>
+ <artifactId>restprj</artifactId>
+ <version>1.0-SNAPSHOT</version>
+ <packaging>war</packaging>
+ <name>restprj</name>
+ <url>http://maven.apache.org</url>
+
+ <properties>
+   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   <junitVersion>4.12</junitVersion>
+   <jettyVersion>9.3.6.v20151106</jettyVersion>
+   <jerseyVersion>2.22.1</jerseyVersion>
+   <jetty.port>8080</jetty.port>
+   <jetty.stopport>9090</jetty.stopport>
+   <jetty.host>0.0.0.0</jetty.host>
+ </properties>
+
+ <dependencies>
+   <dependency>
+     <groupId>junit</groupId>
+     <artifactId>junit</artifactId>
+     <version>${junitVersion}</version>
+     <scope>test</scope>
+   </dependency>
+   <dependency>
+     <groupId>org.eclipse.jetty</groupId>
+     <artifactId>jetty-server</artifactId>
+     <version>${jettyVersion}</version>
+   </dependency>
+   <dependency>
+     <groupId>org.eclipse.jetty</groupId>
+     <artifactId>jetty-servlet</artifactId>
+     <version>${jettyVersion}</version>
+   </dependency>
+   <dependency>
+     <groupId>org.eclipse.jetty</groupId>
+     <artifactId>jetty-util</artifactId>
+     <version>${jettyVersion}</version>
+   </dependency>
+   <dependency>
+     <groupId>org.glassfish.jersey.core</groupId>
+     <artifactId>jersey-server</artifactId>
+     <version>${jerseyVersion}</version>
+  </dependency>
+  <dependency>
+     <groupId>org.glassfish.jersey.containers</groupId>
+     <artifactId>jersey-container-servlet</artifactId>
+     <version>${jerseyVersion}</version>
+  </dependency>
+  <dependency>
+     <groupId>org.glassfish.jersey.containers</groupId>
+     <artifactId>jersey-container-jetty-http</artifactId>
+     <version>${jerseyVersion}</version>
+  </dependency>
+  <dependency>
+     <groupId>org.glassfish.jersey.media</groupId>
+     <artifactId>jersey-media-moxy</artifactId>
+     <version>${jerseyVersion}</version>
+  </dependency>  
+  <!-- Required only when you are using JAX-RS Client -->
+  <dependency>
+     <groupId>org.glassfish.jersey.core</groupId>
+     <artifactId>jersey-client</artifactId>
+     <version>${jerseyVersion}</version>
+  </dependency>
+ </dependencies>
+  
+ <build>
+  <plugins>
+
+    <!-- maven war plugin -->    
+    <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-war-plugin</artifactId>
+       <version>2.6</version>
+       <configuration>
+          <archiveClasses>true</archiveClasses>
+       </configuration>
+    </plugin>
+
+    <!-- Jetty plugin -->
+    <plugin>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-maven-plugin</artifactId>
+      <version>${jettyVersion}</version>
+      <configuration>
+        <systemProperties>
+          <systemProperty>
+            <name>org.eclipse.jetty.annotations.maxWait</name>
+            <value>340</value>
+          </systemProperty>
+        </systemProperties>    
+        <httpConnector>
+            <port>${jetty.port}</port>
+            <host>${jetty.host}</host>
+        </httpConnector>
+        <webApp>
+          <contextPath>/</contextPath>
+        </webApp>
+        <webAppSourceDirectory>
+            ${basedir}/src/main/webapp
+        </webAppSourceDirectory>
+        <dumpOnStart>false</dumpOnStart>               
+        <daemon>false</daemon>
+        <reload>automatic</reload>
+        <scanIntervalSeconds>20</scanIntervalSeconds>       
+        <stopKey>secert</stopKey>
+        <stopPort>${jetty.stopport}</stopPort>
+      </configuration>
+      <executions>
+       <execution>
+        <id>start-jetty</id>
+        <phase>test-compile</phase>
+        <goals>
+          <goal>deploy-war</goal>
+        </goals>
+       </execution>
+       <execution>
+        <id>stop-jetty</id>
+        <phase>test</phase>
+        <goals>
+          <goal>stop</goal>
+        </goals>
+       </execution>
+     </executions>
+    </plugin>
+
+  </plugins>
+ </build>  
+  
+</project>
