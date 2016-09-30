@@ -6,7 +6,7 @@ On Linux Debian/Ubuntu:
 $ sudo apt-get -y install curl git uml-utilities
 
 2 - Install OpenJDK 8, Ant and Maven
-$ ./install-openjdk8.sh 
+$ ./install-openjdk-8.sh 
 $ ./install-ant.sh
 $ ./install-maven.sh
 
