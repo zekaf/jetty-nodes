@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VER="1.9.6"
+VER="1.9.7"
 BIN="apache-ant-${VER}-bin" 
 URL="http://mirrors.fe.up.pt/pub/apache/ant/binaries/${BIN}.tar.gz"
 sudo apt-get purge -y ant
