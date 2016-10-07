@@ -80,34 +80,34 @@ http://node-0:8080/rest/download/pdf
 $ Ctrl+c
 
 12 - Create/Sync 2 nodes (node-1 and node-2) with $HOME folder
-$ ./sync-nodes 2 
+$ ./sync-nodes.sh 2 
 
 13 - Start Jetty server from different nodes using different terminals:
 
 node-0 terminal
 $ cd $HOME/node-0/
-$ ./jetty-server start
+$ ./jetty-server.sh start
 
 node-1 terminal
 $ cd $HOME/node-1/
-$ ./jetty-server start
+$ ./jetty-server.sh start
 
 node-2 terminal
 $ cd $HOME/node-2/
-$ ./jetty-server start
+$ ./jetty-server.sh start
 
 14 - View Jetty server console (optional)
-$ ./jetty-server console
+$ ./jetty-server.sh console
 ( Ctrl+c to finish)
 
 15 - Verify Jetty server status(optional)
-$ ./jetty-server status
+$ ./jetty-server.sh status
 
 16 - To restart Jetty server (optional)
-$ ./jetty-server restart
+$ ./jetty-server.sh restart
 
 17 - Stop Jetty server (optional)
-$ ./jetty-server stop
+$ ./jetty-server.sh stop
 
 
 NOTE:
