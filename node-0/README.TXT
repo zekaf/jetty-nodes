@@ -17,7 +17,7 @@ $ cd $HOME
 $ git clone https://github.com/zekaf/jetty-nodes.git
 
 4 - Reset project:
-$ ./sync-nodes 0
+$ ./sync-nodes.sh 0
 
 5 - Compile code (and execute Jetty)
 $ ./compile.sh war
