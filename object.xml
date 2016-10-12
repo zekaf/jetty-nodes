@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_45" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>192.168.1.1</string>
+   <int>1</int>
+  </void>
+  <void method="put">
+   <string>localhost</string>
+   <int>4</int>
+  </void>
+  <void method="put">
+   <string>10.10.10.1</string>
+   <int>2</int>
+  </void>
+  <void method="put">
+   <string>10.10.10.2</string>
+   <int>30</int>
+  </void>
+  <void method="put">
+   <string>192.168.20.20</string>
+   <int>5</int>
+  </void>
+  <void method="put">
+   <string>192.168.10.250</string>
+   <int>0</int>
+  </void>
+  <void method="put">
+   <string>127.0.0.1</string>
+   <int>100</int>
+  </void>
+ </object>
+</java>
