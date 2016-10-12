@@ -1,11 +1,10 @@
 /**
- * @ # TestHashMap3.java
- * classe que testa operacoes sobre um HashMap 
- * utilizando serializacao para XML
+ * @ # TestHashMap.java
+ * class to test HashMaps
+ * using XML serialization
  * version: 1 Out. 2015
- * author: Jose Faisca  
+ * author: Jose G. Faisca  
  */
-
 
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
