@@ -25,7 +25,7 @@ $ ./compile.sh war
 5.1 - Open a new linux terminal
 
 5.2 - cd to node-0
-$ cd $HOME/node-0
+$ cd $HOME/jetty-nodes/node-0
 
 6 - Test XML REST Java client
 $ ./runwar.sh XMLClient
@@ -85,15 +85,15 @@ $ ./sync-nodes.sh 2
 13 - Start Jetty server from different nodes using different terminals:
 
 node-0 terminal
-$ cd $HOME/node-0/
+$ cd $HOME/jetty-nodes/node-0/
 $ ./jetty-server.sh start
 
 node-1 terminal
-$ cd $HOME/node-1/
+$ cd $HOME/jetty-nodes/node-1/
 $ ./jetty-server.sh start
 
 node-2 terminal
-$ cd $HOME/node-2/
+$ cd $HOME/jetty-nodes/node-2/
 $ ./jetty-server.sh start
 
 14 - View Jetty server console (optional)
