@@ -5,16 +5,16 @@ On Linux Debian/Ubuntu:
 1 - Install curl, git and uml-utilities
 $ sudo apt-get -y install curl git uml-utilities
 
-2 - Install OpenJDK 8, Ant and Maven
+2 - Clone git repository to $HOME
+$ cd $HOME
+$ git clone https://github.com/zekaf/jetty-nodes.git
+
+3 - Install OpenJDK 8, Ant and Maven
 $ ./install-openjdk-8.sh 
 $ ./install-ant.sh
 $ ./install-maven.sh
 
 --- DEV AND TESTS ---
-
-3 - Clone git repository to $HOME
-$ cd $HOME
-$ git clone https://github.com/zekaf/jetty-nodes.git
 
 4 - Reset project:
 $ ./sync-nodes.sh 0
