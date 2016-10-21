@@ -89,11 +89,11 @@ $ cd $HOME/jetty-nodes/node-0/
 $ ./jetty-server.sh start
 
 node-1 terminal
-$ cd $HOME/jetty-nodes/node-1/
+$ cd $HOME/node-1/
 $ ./jetty-server.sh start
 
 node-2 terminal
-$ cd $HOME/jetty-nodes/node-2/
+$ cd $HOME/node-2/
 $ ./jetty-server.sh start
 
 14 - View Jetty server console (optional)
