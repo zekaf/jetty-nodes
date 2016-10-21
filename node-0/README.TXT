@@ -78,8 +78,9 @@ http://node-0:8080/rest/download/pdf
 11 - Finish process started on topic 5
 $ Ctrl+c
 
-12 - Create/Sync 2 nodes (node-1 and node-2) with $HOME folder
-$ ./sync-nodes.sh 2 
+12 - Create/Sync 2 nodes (node-1 and node-2)
+$ cd $HOME/jetty-nodes/node-0
+$ ./sync-nodes.sh 2 $ 
 
 13 - Start Jetty server from different nodes using different terminals:
 
