@@ -10,6 +10,7 @@ $ cd $HOME
 $ git clone https://github.com/zekaf/jetty-nodes.git
 
 3 - Install OpenJDK 8, Ant and Maven
+$ cd $HOME/jetty-nodes/node-0
 $ ./install-openjdk-8.sh 
 $ ./install-ant.sh
 $ ./install-maven.sh
@@ -23,9 +24,6 @@ $ ./sync-nodes.sh 0
 $ ./compile.sh war
 
 5.1 - Open a new linux terminal
-
-5.2 - cd to node-0
-$ cd $HOME/jetty-nodes/node-0
 
 6 - Test XML REST Java client
 $ ./runwar.sh XMLClient
