@@ -24,6 +24,7 @@ $ ./sync-nodes.sh 0
 $ ./compile.sh war
 
 5.1 - Open a new linux terminal
+$ cd $HOME/jetty-nodes/node-0
 
 6 - Test XML REST Java client
 $ ./runwar.sh XMLClient
