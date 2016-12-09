@@ -12,8 +12,10 @@
    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
    <junitVersion>4.12</junitVersion>
    <jettyVersion>9.3.6.v20151106</jettyVersion>
-   <jerseyVersion>2.22.1</jerseyVersion>
-   <jetty.port>8080</jetty.port>
+   <jerseyVersion>2.22.1</jerseyVersion>   
+   <jsonrpc2ServerVersion>1.11</jsonrpc2ServerVersion>
+   <jsonrpc2ClientVersion>1.15</jsonrpc2ClientVersion>     
+   <jetty.port>8080</jetty.port>  
    <jetty.stopport>9090</jetty.stopport>
    <jetty.host>0.0.0.0</jetty.host>
  </properties>
@@ -66,6 +68,17 @@
      <artifactId>jersey-client</artifactId>
      <version>${jerseyVersion}</version>
   </dependency>
+  <!-- Required for JSON-RPC -->
+  <dependency>
+     <groupId>com.thetransactioncompany</groupId>
+     <artifactId>jsonrpc2-server</artifactId>
+     <version>${jsonrpc2ServerVersion}</version>
+  </dependency>
+  <dependency>
+     <groupId>com.thetransactioncompany</groupId>
+     <artifactId>jsonrpc2-client</artifactId>
+     <version>${jsonrpc2ClientVersion}</version>
+  </dependency>   
  </dependencies>
   
  <build>
