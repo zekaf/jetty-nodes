@@ -68,7 +68,7 @@
      <artifactId>jersey-client</artifactId>
      <version>${jerseyVersion}</version>
   </dependency>
-  <!-- Required for JSON-RPC -->
+  <!-- Required for JSON-RPC2 -->
   <dependency>
      <groupId>com.thetransactioncompany</groupId>
      <artifactId>jsonrpc2-server</artifactId>
