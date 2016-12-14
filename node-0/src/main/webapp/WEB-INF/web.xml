@@ -19,6 +19,26 @@
     <servlet-name>Hello</servlet-name>
     <url-pattern>/hello/*</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>com.rpc.HelloServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/rpc/hello/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GetServlet</servlet-name>
+    <servlet-class>com.rpc.GeRequestServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GetServlet</servlet-name>
+    <url-pattern>/rpc/get/*</url-pattern>
+  </servlet-mapping>
   
   <servlet>
     <servlet-name>RESTful</servlet-name>
