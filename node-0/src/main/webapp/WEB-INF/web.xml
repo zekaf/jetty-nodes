@@ -32,7 +32,7 @@
 
   <servlet>
     <servlet-name>GetServlet</servlet-name>
-    <servlet-class>com.rpc.GeRequestServlet</servlet-class>
+    <servlet-class>com.rpc.GetRequestServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
