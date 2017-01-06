@@ -41,13 +41,13 @@
   </servlet-mapping>
 
     <servlet>
-    <servlet-name>init</servlet-name>
-    <servlet-class>com.rpc.init</servlet-class>
+    <servlet-name>WebsocketServlet</servlet-name>
+    <servlet-class>com.ws.MyServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>init</servlet-name>
-    <url-pattern>/rpc/init/*</url-pattern>
+    <servlet-name>WebsocketServlet</servlet-name>
+    <url-pattern>/ws/wsexample/*</url-pattern>
   </servlet-mapping>
   
   <servlet>
