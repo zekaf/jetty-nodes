@@ -69,7 +69,7 @@ drwxrwxr-x  2 aluno aluno   60  Nov 27 19:05 .
 drwxrwxrwt 16 aluno aluno   540 Nov 27 20:28 ..
 -rw-rw-r--  1 aluno aluno  7696 Nov 27 20:28 Sample.pdf
 
-18 - Test download from client browser:
+19 - Test download from client browser:
 http://node-0:8080/rest/download/pdf
  
 
@@ -117,3 +117,19 @@ Source code folders
 'src/main/java/com/rest/howtodoinjava'
 
 
+TEST WEBSOCKETS
+
+1 - Install dependencies
+$ sudo apt install python-websocket
+
+2 - Test Javascript client using Web Browser
+http://node-0:8080/ws.html
+
+3 - Test java client
+$ cd node-0 
+$ ./runwar.sh JettyWebSocketClient
+
+4 - Test Python client
+$ cd ..
+$ cd python
+$ python pyclient.py
