@@ -82,8 +82,32 @@
      <groupId>com.thetransactioncompany</groupId>
      <artifactId>jsonrpc2-client</artifactId>
      <version>${jsonrpc2ClientVersion}</version>
-</dependency> 
-   
+  </dependency> 
+  
+  <!--Jetty JSR-356 Websocket server side dependency -->
+  <dependency>
+	 <groupId>org.eclipse.jetty.websocket</groupId>
+	 <artifactId>javax-websocket-server-impl</artifactId>
+	 <version>${jettyVersion}</version>
+  </dependency>
+  <!--Jetty Websocket API server side dependency -->
+  <dependency>
+	 <groupId>org.eclipse.jetty.websocket</groupId>
+	 <artifactId>websocket-server</artifactId>
+	 <version>${jettyVersion}</version>
+  </dependency> 
+  <!--JSR-356 Websocket client side depencency  -->
+  <dependency>
+	 <groupId>org.eclipse.jetty.websocket</groupId>
+	 <artifactId>javax-websocket-client-impl</artifactId>
+	 <version>${jettyVersion}</version>
+  </dependency>
+  <!--Jetty Websocket API client side dependency -->
+  <dependency>
+	 <groupId>org.eclipse.jetty.websocket</groupId>
+	 <artifactId>websocket-client</artifactId>
+	 <version>${jettyVersion}</version>
+  </dependency>
    
  </dependencies>
   
@@ -124,7 +148,7 @@
         </webAppSourceDirectory>
       </configuration>
     </plugin>
-
+  
   </plugins>
  </build>  
   
