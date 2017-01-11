@@ -4,7 +4,8 @@ import websocket
 
 websocket.enableTrace(True)
 ws = websocket.create_connection("ws://node-0:8080/ws/wsexample")
-print "Sending message"
-ws.send("Hello server")
+msg = "Hello Server"
+print "SENT: %s" %msg
+ws.send(msg)
 result = ws.recv()
-print "Received '%s'" % result 
+print "RESPONSE: %s" % result

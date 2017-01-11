@@ -117,7 +117,7 @@ Source code folders
 'src/main/java/com/rest/howtodoinjava'
 
 
-TEST WEBSOCKETS
+--- TEST WEBSOCKETS ---
 
 1 - Install dependencies
 $ sudo apt install python-websocket
@@ -126,10 +126,9 @@ $ sudo apt install python-websocket
 http://node-0:8080/ws.html
 
 3 - Test java client
-$ cd node-0 
+$ cd $HOME/jetty-nodes/node-0/
 $ ./runwar.sh JettyWebSocketClient
 
 4 - Test Python client
-$ cd ..
 $ cd python
 $ python pyclient.py

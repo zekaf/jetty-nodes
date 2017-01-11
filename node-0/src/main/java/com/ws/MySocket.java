@@ -26,7 +26,7 @@ public class MySocket {
         System.out.println("Connect: " + session.getRemoteAddress().getAddress());
         
         try {
-            session.getRemote().sendString("Hello Web Browser");
+            session.getRemote().sendString("Hello Client");
         } catch (IOException e) {
             System.out.println("IO Exception");
         }
