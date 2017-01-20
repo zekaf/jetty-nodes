@@ -13,6 +13,7 @@
    <junitVersion>4.12</junitVersion>
    <jettyVersion>9.3.6.v20151106</jettyVersion>
    <jerseyVersion>2.22.1</jerseyVersion>   
+   <swaggerVersion>1.5.12</swaggerVersion>  
    <jsonrpc2ServerVersion>1.11</jsonrpc2ServerVersion>
    <jsonrpc2ClientVersion>1.15</jsonrpc2ClientVersion>     
    <jetty.port>8080</jetty.port>  
@@ -79,7 +80,6 @@
      <artifactId>jsonrpc2-client</artifactId>
      <version>${jsonrpc2ClientVersion}</version>
   </dependency> 
-    
   <!--Jetty JSR-356 Websocket server side dependency -->
   <dependency>
 	 <groupId>org.eclipse.jetty.websocket</groupId>
@@ -103,6 +103,12 @@
 	 <groupId>org.eclipse.jetty.websocket</groupId>
 	 <artifactId>websocket-client</artifactId>
 	 <version>${jettyVersion}</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/io.swagger/swagger-jersey2-jaxrs -->
+  <dependency>
+     <groupId>io.swagger</groupId>
+     <artifactId>swagger-jersey2-jaxrs</artifactId>
+     <version>${swaggerVersion}</version>
   </dependency>
    
  </dependencies>

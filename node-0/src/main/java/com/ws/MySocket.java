@@ -24,11 +24,10 @@ public class MySocket {
     @OnWebSocketConnect
     public void onConnect(Session session) {
         System.out.println("Connect: " + session.getRemoteAddress().getAddress());
-        
         try {
-            session.getRemote().sendString("Hello Client");
-        } catch (IOException e) {
-            System.out.println("IO Exception");
+			session.getRemote().sendString("Hello Client");	
+        } catch (Exception e) {
+            System.out.println("Exception "+ e);
         }
     }
 
