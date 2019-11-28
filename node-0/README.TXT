@@ -7,7 +7,7 @@ $ sudo apt-get -y install curl git uml-utilities
 
 2 - Clone git repository to $HOME
 $ cd $HOME
-$ git clone https://github.com/zekaf/jetty-nodes.git
+$ git clone https://github.com/jgfaisca/jetty-nodes.git
 
 3 - Install OpenJDK 8, Ant and Maven
 $ cd $HOME/jetty-nodes/node-0
