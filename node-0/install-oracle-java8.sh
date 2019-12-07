@@ -19,8 +19,9 @@ sudo apt install oracle-java$VERSION-installer-local
 # set environment variables
 sudo apt install oracle-java$VERSION-set-default-local
 
-# check it
+# check version
 java -version
+javac -version
 
 #If you have more than one Java versions installed on your system. Run:
 #sudo update-alternatives --config java
