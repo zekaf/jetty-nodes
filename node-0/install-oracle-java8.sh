@@ -1,22 +1,23 @@
 #!/bin/bash
 #
-# install Java 8 JDK using Webup8 Oracle Java8 installer
+# install Oracle Java JDK using PPA repository
 #
+
+# Java version
+VERSION=12
 
 # install
 apt-get -y -q update
 apt-get -y -q upgrade
-apt-get -y -q install software-properties-common htop
-sudo apt-add-repository ppa:webupd8team/java -y &&
+apt-get -y -q install software-properties-common 
+sudo add-apt-repository ppa:linuxuprising/java -y &&
 sudo apt-get -y update &&
-echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-apt-get -y -q install oracle-java8-installer
-
-sudo apt-get -y install oracle-java8-installer &&
+#echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+#echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+sudo apt install oracle-java$VERSION-installer-local
 
 # set environment variables
-sudo apt-get -y install oracle-java8-set-default
+sudo apt install oracle-java$VERSION-set-default-local
 
 # check it
 java -version
