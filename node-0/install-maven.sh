@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VER="3.3.9"
+VER="3.6.3"
 BIN="apache-maven-${VER}-bin" 
 URL="http://mirrors.fe.up.pt/pub/apache/maven/maven-3/${VER}/binaries/${BIN}.tar.gz"
 sudo apt-get purge -y maven
