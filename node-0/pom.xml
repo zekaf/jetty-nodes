@@ -11,7 +11,7 @@
  <properties>
    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
    <junitVersion>4.12</junitVersion>
-   <jettyVersion>9.3.6.v20151106</jettyVersion>
+   <jettyVersion>9.4.24.v20191120</jettyVersion>
    <jerseyVersion>2.22.1</jerseyVersion>
    <swaggerVersion>1.5.12</swaggerVersion>
    <jsonrpc2ServerVersion>1.11</jsonrpc2ServerVersion>
